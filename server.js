@@ -9,8 +9,8 @@ app.use(express.static('./'));
 app.use(express.json());
 
 //api and html route files required  
-require("./htmlRoutes")(app);
-require("./apiRoutes")(app);
+require("./htmlRoutes");
+require("./apiRoutes");
 
 // begin listening
 app.listen(PORT, function () {
